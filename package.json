@@ -1,7 +1,7 @@
 {
-	"name": "template",
-	"version": "0.0.1",
-	"description": "使用 TypeScript 来开发自己的类库吧！",
+	"name": "{{name}}",
+	"version": "{{version}}",
+	"description": "{{description}}",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
@@ -16,7 +16,7 @@
 		"build:major": "webpack --config webpack.prod.js",
 		"prebuild:major": "npm version major && tsc"
 	},
-	"author": "GT<769416198@qq.com>",
+	"author": "{{author}}",
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/core": "^7.18.6",
