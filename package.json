@@ -8,13 +8,13 @@
 		"dev": "webpack server --hot --config webpack.dev.js",
 		"demo": "webpack --config webpack.demo.js",
 		"build": "webpack --config webpack.prod.js",
-		"prebuild": "tsc",
+		"prebuild": "tsc -p src",
 		"build:patch": "webpack --config webpack.prod.js",
-		"prebuild:patch": "npm version patch && tsc",
+		"prebuild:patch": "npm version patch && tsc -p src",
 		"build:minor": "webpack --config webpack.prod.js",
-		"prebuild:minor": "npm version minor && tsc",
+		"prebuild:minor": "npm version minor && tsc -p src",
 		"build:major": "webpack --config webpack.prod.js",
-		"prebuild:major": "npm version major && tsc"
+		"prebuild:major": "npm version major && tsc -p src"
 	},
 	"author": "{{author}}",
 	"license": "ISC",

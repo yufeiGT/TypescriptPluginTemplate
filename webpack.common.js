@@ -8,7 +8,7 @@ module.exports = {
 		plugins: [new TsConfigPathsPlugin()],
 		extensions: ['.vue', '.ts', 'tsx', '.js'],
 		alias: {
-			template: path.resolve(__dirname, 'src'),
+			'{{name}}': path.resolve(__dirname, 'src'),
 		},
 	},
 	module: {

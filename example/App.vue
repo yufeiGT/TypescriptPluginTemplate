@@ -1,7 +1,7 @@
 <template>
-	<div class="header">asdasd</div>
+	<div class="header">头部</div>
 	<div class="main">
-		<router-view />
+		<router-view></router-view>
 	</div>
 </template>
 
