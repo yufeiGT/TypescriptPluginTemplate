@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"sourceMap": true,
 		"allowJs": true,
-		"target": "es5",
+		"target": "ES2015",
 		"module": "ES2015",
 		"lib": [
 			"es2016",
