@@ -11,8 +11,9 @@ module.exports = merge(common, {
 	output: {
 		path: path.resolve(__dirname, './dist'),
 		filename: '[name].js',
-		library: 'Spanner',
+		library: '{{libraryName}}',
 		libraryTarget: 'umd',
 		globalObject: 'this',
 	},
+	externals: {},
 });
