@@ -3,7 +3,7 @@
 	"version": "{{version}}",
 	"description": "{{description}}",
 	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"types": "dist/typings/index.d.ts",
 	"scripts": {
 		"dev": "webpack server --hot --config webpack.dev.js",
 		"demo": "webpack --config webpack.demo.js",
