@@ -15,5 +15,12 @@ module.exports = merge(common, {
 		libraryTarget: 'umd',
 		globalObject: 'this',
 	},
-	externals: {},
+	externals: {
+        // 'XXXXXXX': {
+        //     commonjs: 'XXXXXXX',
+        //     commonjs2: 'XXXXXXX',
+        //     amd: 'XXXXXXX',
+        //     root: 'XXXXXXX',
+        // },
+	},
 });
