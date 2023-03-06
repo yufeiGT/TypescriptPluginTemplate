@@ -28,5 +28,6 @@ module.exports = merge(common, {
 	},
 	devServer: {
 		hot: '0.0.0.0',
+		static: [path.resolve(__dirname, './example/public')],
 	},
 });
