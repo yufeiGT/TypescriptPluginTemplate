@@ -2,7 +2,7 @@
 	<Flex vert="auto" gap align="center">
 		<Flex class="name">{{ libraryName }}</Flex>
 		<Flex hor="auto" :gap="5">
-			<Flex>SVG 地图，版本 v{{ pkg.version }}，查看</Flex>
+			<Flex>{{ description }} v{{ version }}，查看</Flex>
 			<RouterLink to="/guide">指南</RouterLink>
 		</Flex>
 		<Flex sandbox>
