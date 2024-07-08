@@ -8,7 +8,7 @@ module.exports = {
 		plugins: [new TsConfigPathsPlugin()],
 		extensions: ['.vue', '.ts', 'tsx', '.js'],
 		alias: {
-			'{{name}}': path.resolve(__dirname, 'src'),
+			'@kotron/svg-map': path.resolve(__dirname, 'src'),
 		},
 	},
 	module: {
@@ -42,6 +42,18 @@ module.exports = {
 			{
 				test: /\.s[ac]ss$/,
 				use: ['style-loader', 'css-loader', 'sass-loader'],
+			},
+			{
+				test: /\.(png|jpe?g|gif|webp)$/,
+				type: 'asset',
+			},
+			{
+				test: /\.md$/,
+				use: [
+					{
+						loader: 'raw-loader',
+					},
+				],
 			},
 		],
 	},

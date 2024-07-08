@@ -1,0 +1,36 @@
+<template>
+	<Flex vert="auto" gap align="center">
+		<Flex class="name">{{ libraryName }}</Flex>
+		<Flex hor="auto" :gap="5">
+			<Flex>SVG 地图，版本 v{{ pkg.version }}，查看</Flex>
+			<RouterLink to="/guide">指南</RouterLink>
+		</Flex>
+		<Flex sandbox>
+			<MdPreviewVue :model-value="(installMd as any)"></MdPreviewVue>
+		</Flex>
+	</Flex>
+</template>
+
+<script lang="ts" setup>
+import { Flex } from '@kotron/fortress-ui';
+
+import MdPreviewVue from '@/components/MdPreview.vue';
+
+import pkg from '../../../package.json';
+
+import installMd from './install.md';
+</script>
+
+<style lang="scss" scoped>
+.name {
+	font-size: rem(30px);
+}
+
+a {
+	color: #d3d35a;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+</style>

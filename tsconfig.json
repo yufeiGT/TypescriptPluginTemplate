@@ -21,7 +21,9 @@
 			"@/*": [
 				"./example/*"
 			],
-		}
+		},
+		"resolveJsonModule": true,
+		"esModuleInterop": true
 	},
 	"files": [
 		"src/index.ts"

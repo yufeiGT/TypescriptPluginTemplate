@@ -3,7 +3,7 @@
 		"sourceMap": true,
 		"allowJs": true,
 		"target": "ES2015",
-		"module": "ES2015",
+		"module": "CommonJS",
 		"lib": [
 			"es2016",
 			"dom"
@@ -13,6 +13,10 @@
 		"outDir": "../dist/",
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true,
+		"isolatedModules": false,
+		"noImplicitThis": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true
 	},
 	"files": [
 		"./index.ts"
@@ -21,5 +25,9 @@
 		"./**/*",
 		"./**/*.ts",
 		"./**/*.d.ts",
+		"./**/*.vue",
+	],
+	"exclude": [
+		"node_modules"
 	]
 }
