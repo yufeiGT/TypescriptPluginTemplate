@@ -10,7 +10,7 @@
 				style="border-bottom: solid 1px #666"
 			>
 				<Flex hor="auto" gap>
-					<a @click="to('Home')" class="name">SvgMap</a>
+					<a @click="to('Home')" class="name">{{name}}</a>
 					<span class="version">v{{ pkg.version }}</span>
 				</Flex>
 				<Flex hor="auto" gap>
