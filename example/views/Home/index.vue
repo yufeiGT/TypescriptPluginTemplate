@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Flex } from '@kotron/fortress-ui';
+import { Flex } from '@gluttons/fortress-ui';
 
 import MdPreviewVue from '@/components/MdPreview.vue';
 
@@ -23,7 +23,7 @@ import installMd from './install.md';
 
 <style lang="scss" scoped>
 .name {
-	font-size: rem(30px);
+	font-size: _rem(30px);
 }
 
 a {

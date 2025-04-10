@@ -7,7 +7,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import { Flex, CssUnits } from '@kotron/fortress-ui';
+import { Flex, CssUnits } from '@gluttons/fortress-ui';
 
 const fontSize = ref(CssUnits.rem(30));
 </script>

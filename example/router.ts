@@ -1,4 +1,4 @@
-import { Router } from '@kotron/global';
+import { Router } from '@gluttons/es-tools';
 
 import HomeVue from './views/Home/index.vue';
 import GuideVue from './views/Guide/index.vue';

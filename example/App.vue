@@ -32,8 +32,8 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { Router } from '@kotron/global';
-import { ConfigProvider, Flex } from '@kotron/fortress-ui';
+import { Router } from '@gluttons/es-tools';
+import { ConfigProvider, Flex } from '@gluttons/fortress-ui';
 
 import pkg from '../package.json';
 
@@ -71,7 +71,7 @@ function to(name: string) {
 .version {
 	user-select: none;
 	color: #666;
-	font-size: rem(14px);
+	font-size: _rem(14px);
 }
 
 a {

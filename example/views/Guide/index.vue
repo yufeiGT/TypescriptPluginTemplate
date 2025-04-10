@@ -24,8 +24,8 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { Router } from '@kotron/global';
-import { Flex } from '@kotron/fortress-ui';
+import { Router } from '@gluttons/es-tools';
+import { Flex } from '@gluttons/fortress-ui';
 
 const route = useRoute();
 const router = useRouter();
@@ -53,7 +53,7 @@ function to(name: string) {
 		color: #666;
 		cursor: pointer;
 		user-select: none;
-		font-size: rem(14px);
+		font-size: _rem(14px);
 
 		&:hover,
 		&.active {

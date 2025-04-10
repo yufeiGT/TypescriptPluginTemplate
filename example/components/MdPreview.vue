@@ -41,7 +41,7 @@ const value = computed({
 		background-color: #111;
 
 		.pre {
-			margin: rem(20px) 0;
+			margin: _rem(20px) 0;
 		}
 
 		& > *:last-child {
