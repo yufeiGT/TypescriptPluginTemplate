@@ -1,8 +1,8 @@
 <template>
 	<Flex vert="auto" gap align="center">
-		<Flex class="name">{{libraryName}}</Flex>
+		<Flex class="name">{{ name }}</Flex>
 		<Flex hor="auto" :gap="5">
-			<Flex>{{description}} v{{version}}，查看</Flex>
+			<Flex>{{ description }} v{{ version }}，查看</Flex>
 			<RouterLink to="/guide">指南</RouterLink>
 		</Flex>
 		<Flex sandbox>
@@ -17,6 +17,8 @@ import { Flex } from '@gluttons/fortress-ui';
 import MdPreviewVue from '@/components/MdPreview.vue';
 
 import pkg from '../../../package.json';
+
+const { name, version, description } = pkg;
 
 import installMd from './install.md';
 </script>
