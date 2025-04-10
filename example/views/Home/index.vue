@@ -1,8 +1,8 @@
 <template>
 	<Flex vert="auto" gap align="center">
-		<Flex class="name">{{ libraryName }}</Flex>
+		<Flex class="name">{{libraryName}}</Flex>
 		<Flex hor="auto" :gap="5">
-			<Flex>{{ description }} v{{ version }}，查看</Flex>
+			<Flex>{{description}} v{{version}}，查看</Flex>
 			<RouterLink to="/guide">指南</RouterLink>
 		</Flex>
 		<Flex sandbox>

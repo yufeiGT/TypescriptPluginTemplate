@@ -10,8 +10,8 @@
 				style="border-bottom: solid 1px #666"
 			>
 				<Flex hor="auto" gap>
-					<a @click="to('Home')" class="name">{{ name }}</a>
-					<span class="version">v{{ version }}</span>
+					<a @click="to('Home')" class="name">{{name}}</a>
+					<span class="version">v{{version}}</span>
 				</Flex>
 				<Flex hor="auto" gap>
 					<a
