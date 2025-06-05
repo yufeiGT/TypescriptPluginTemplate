@@ -23,8 +23,7 @@
 			],
 		},
 		"resolveJsonModule": true,
-		"esModuleInterop": true,
-		"skipLibCheck": true
+		"esModuleInterop": true
 	},
 	"files": [
 		"src/index.ts"
