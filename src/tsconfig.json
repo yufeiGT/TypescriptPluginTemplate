@@ -16,7 +16,8 @@
 		"isolatedModules": false,
 		"noImplicitThis": true,
 		"resolveJsonModule": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+		"skipLibCheck": true
 	},
 	"files": [
 		"./index.ts"
